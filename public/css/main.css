@@ -1,0 +1,325 @@
+/* All / variables */
+
+body{
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+ul{
+    padding: 0px;
+}
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.text_center{
+    text-align: center;
+}
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 170px;
+    padding: 0px 23%;
+    background: linear-gradient(to top, black, rgb(216, 2, 216));
+    font-family: 'Times New Roman', Times, serif;
+}
+header h1{
+    font-style: italic;
+    font-size: 2.5em;
+    border-bottom: 2px solid ;
+}
+
+.page__nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    font-size: 1.2em;
+}
+.page__nav > li{
+    width: 160px;
+    padding: 7px 20px 10px 20px;
+    margin: 0px 5px;
+    position: relative;
+}
+.page__nav__link{
+    color: black;
+    text-decoration: none;
+}
+.page__nav__noroll{
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.page__nav__noroll:hover{
+    border-bottom: double 4px white;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown__content{
+    display: none;
+    position: absolute;
+    left: -17px;
+    top: 35px;
+    z-index: 10;
+    width: inherit;
+    text-align: center;
+    padding-left: 0px;
+    background-color: rgba(230, 243, 243, 0.8);
+    border-style: none solid solid solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.dropdown__content > li{
+    padding: 10px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+}
+.dropdown__content :first-child > a{
+    color: blue;
+}
+.dropdown__content :nth-child(1n + 2) > a{
+    color:  rgb(216, 2, 216);
+}
+.dropdown__content :last-child{
+    border-bottom: none;
+}
+.dropdown__content > li:hover{
+    background-color: rgb(255, 255, 255);
+    color: red;
+}
+
+/* Main */
+
+main {
+    width: 65%;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+    /* FORM */
+
+fieldset {
+    border-radius: 25px;
+}
+legend {
+    margin: auto;
+    font-size: 1.2em;
+    padding: 3px 8px;
+    border-top: solid 1px rgba(210,210,210,0.5);
+    border-bottom: solid 1px rgba(210,210,210,0.5);
+    border-radius: 5px;
+}
+form > :nth-child(1n) {
+    margin: 15px 5px;
+    padding: 8px;
+    border-bottom: solid rgba(139, 139, 139, 0.4) 1px;
+}
+form > div{
+    background: linear-gradient(to right, black,purple,black);
+}
+form > :nth-child(2n) {
+    border-right: solid dodgerblue 3px;
+    border-radius: 10px;
+}
+form > :nth-child(2n -1) {
+    border-left: solid violet 3px;
+    border-radius: 10px;
+}
+form > div:last-of-type{
+    background: black;
+}
+#my_account__form0{
+    background: linear-gradient(to right, black,purple,black);
+    border-right: solid dodgerblue 3px;
+}
+#my_account__form1{
+    background: linear-gradient(to right, black,purple,black);
+    border-right: solid dodgerblue 3px;
+}
+input {
+    padding: 6px;
+    border-radius: 5px;
+    border-width: 1px 2px 2px 1px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+input:hover {
+    background-color: rgb(249, 77, 255);
+}
+button{
+    border-radius: 5px;
+    border-width: 1px 2px 2px 1px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+button:hover {
+    background-color: rgb(249, 77, 255);
+    color: white;
+}
+input:focus {
+    background-color: rgb(251, 144, 255);
+    border-style: outset;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 6px 0px gray;
+}
+input[type="submit"]:hover{
+    background-color: rgb(249, 77, 255);
+    color: white;
+}
+input[type="submit"]:active {
+    box-shadow: 0px 2px 0px gray;
+    transform: translateY(4px);
+}
+input[type="checkbox"]{
+    transition: all 0.2s;
+    margin-right: 10px;
+}
+input[type="checkbox"]:hover{
+    transform: scale(1.3);
+}
+.error_message{
+    color: red;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+form > .no_border{
+    border: none;
+}
+.button{
+    padding: 10px 20px;
+    box-shadow: 0px 6px 0px black;
+}
+.button:active {
+    box-shadow: 0px 2px 0px black;
+    transform: translateY(4px);
+}
+
+.valid{
+    display: none;
+}
+.error_message__box{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    border: outset red 4px;
+}
+
+/* INFOS_MEMBERS */
+    /* My_account */
+.infos_perso{
+    width: 40%;
+    background: linear-gradient(to right, black, purple, black);
+    margin: auto;
+    padding: 20px;
+    border: solid 1px lightgray;
+    border-radius: 30px;
+}
+
+    /* Search */
+.members_data{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    padding: 15px 3px 0px 3px;
+}
+.slide{
+    display: none;
+    position: relative;
+    background: linear-gradient(to right, black, purple, black);
+    padding: 20px;
+    border: 4px white double;
+    border-radius: 30px;
+}
+#slide_count{
+    position: absolute;
+    font-weight: bold;
+    top: 15%;
+    right: 15%;
+    z-index: 100;
+}
+
+.fade_in {
+    animation-name: fade_in;
+    animation-duration: .4s;
+}
+@keyframes fade_in {
+    from {
+        opacity: 0.5;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+.slide__buttons{
+    cursor: pointer;
+    position: absolute;
+    top: 44%;
+    background: url('../images/2.png');
+}
+.slide__buttons--left{
+    left: -42px;
+    background-position: -0px -0px;
+    width: 45px;
+    height: 45px;
+}
+.slide__buttons--right{
+    right: -42px;
+    background-position: -45px -0px;
+    width: 45px;
+    height: 45px;
+}
+
+.select {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+.current, .select:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+    /* Chatroom */
+
+#chat_form{
+    background: linear-gradient(to right, black,purple,black);
+    border-right: solid dodgerblue 3px;
+    padding: 15px;
+}
+.chat_input{
+    width: 85%;
+    margin-right: 20px;
+}
+.chat_container {
+    margin: 10px auto;
+    padding: 10px;
+    border: 3px double white;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, black, purple, black);
+}
+.chat_container__message {
+    margin: 10px;
+    border-bottom: solid 1px white;
+}
+.chat_container__message:last-child {
+    border: none;
+}
